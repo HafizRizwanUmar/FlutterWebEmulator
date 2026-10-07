@@ -185,6 +185,6 @@
     "platform-tools/**",
     "package.json",
     "readme.md",
-    "LICENSE.md"
+    "LICENSE"
   ]
 }
