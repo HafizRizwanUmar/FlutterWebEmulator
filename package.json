@@ -2,7 +2,7 @@
   "name": "flutter-web-emulator",
   "displayName": "Flutter Web Emulator",
   "description": "Run and test Flutter web apps in a phone-like Flutter Web Emulator inside VS Code. Supports hot reload, device rotation, Android mirroring via ADB, screenshot capture, and multiple device presets.",
-  "version": "2.11.0",
+  "version": "2.12.0",
   "publisher": "hafizrizwanumar",
   "engines": {
     "vscode": "^1.103.0"
@@ -156,7 +156,7 @@
         "flutterWebEmulator.adbPath": {
           "type": "string",
           "default": "",
-          "description": "Override path to the ADB executable. Leave empty to use the bundled ADB that ships with this extension \u2014 no manual installation required."
+          "description": "Override path to the ADB executable. Leave empty to use the bundled ADB that ships with this extension — no manual installation required."
         }
       }
     }
