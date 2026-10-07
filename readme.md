@@ -2,7 +2,7 @@
 
 Run and test Flutter web apps in a phone-like Flutter Web Emulator directly inside VS Code.
 
-[![Official Website](https://img.shields.io/badge/Official%20Website-flutterwebemulator.site-blue?style=for-the-badge)](https://minderfly.com)
+[![Official Website](https://img.shields.io/badge/Official%20Website-Minderfly-blue?style=for-the-badge)](https://www.minderfly.com/products/flutter-web-emulator)
 [![Open Source](https://img.shields.io/badge/Open%20Source-100%25-green?style=for-the-badge)](https://github.com/HafizRizwanUmar/FlutterWebEmulator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
@@ -47,7 +47,7 @@ We love open source! Contributions are welcome and greatly appreciated.
 ## Visit Us
 
 For more information, documentation, and updates, visit our official website:
-**[flutterwebemulator.site](https://minderfly.com)**
+**[minderfly.com/products/flutter-web-emulator](https://www.minderfly.com/products/flutter-web-emulator)**
 
 ---
 

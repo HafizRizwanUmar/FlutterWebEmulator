@@ -40,7 +40,7 @@ const FlutterWebEmulatorPanel_1 = require("./FlutterWebEmulatorPanel");
 const FlutterProcessManager_1 = require("./FlutterProcessManager");
 const HotReloadManager_1 = require("./HotReloadManager");
 const AdbMirrorManager_1 = require("./AdbMirrorManager");
-const WEBSITE_URL = 'https://flutterwebemulator.site';
+const WEBSITE_URL = 'https://www.minderfly.com/products/flutter-web-emulator';
 function activate(context) {
     console.log('flutterWebEmulator extension is now active');
     const processManager = new FlutterProcessManager_1.FlutterProcessManager();
