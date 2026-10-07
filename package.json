@@ -1,0 +1,190 @@
+{
+  "name": "flutter-web-emulator",
+  "displayName": "Flutter Web Emulator",
+  "description": "Run and test Flutter web apps in a phone-like Flutter Web Emulator inside VS Code. Supports hot reload, device rotation, Android mirroring via ADB, screenshot capture, and multiple device presets.",
+  "version": "2.11.0",
+  "publisher": "hafizrizwanumar",
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "flutter",
+    "dart",
+    "web",
+    "Flutter Web Emulator",
+    "mobile",
+    "android",
+    "adb"
+  ],
+  "icon": "media/logo.png",
+  "galleryBanner": {
+    "color": "#0A0A0F",
+    "theme": "dark"
+  },
+  "homepage": "https://flutterwebemulator.site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HafizRizwanUmar/flutter-emulator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HafizRizwanUmar/flutter-emulator/issues"
+  },
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "flutterWebEmulator.start",
+        "title": "Flutter Web Emulator: Start",
+        "icon": "$(play)"
+      },
+      {
+        "command": "flutterWebEmulator.reload",
+        "title": "Flutter Web Emulator: Reload"
+      },
+      {
+        "command": "flutterWebEmulator.rotate",
+        "title": "Flutter Web Emulator: Rotate Device"
+      },
+      {
+        "command": "flutterWebEmulator.showThanks",
+        "title": "Flutter Web Emulator: About"
+      },
+      {
+        "command": "flutterWebEmulator.openWebsite",
+        "title": "Flutter Web Emulator: Open Website"
+      },
+      {
+        "command": "flutterWebEmulator.startAdbMirror",
+        "title": "Flutter Web Emulator: Start Android Mirror",
+        "icon": "$(device-mobile)"
+      },
+      {
+        "command": "flutterWebEmulator.stopAdbMirror",
+        "title": "Flutter Web Emulator: Stop Android Mirror"
+      },
+      {
+        "command": "flutterWebEmulator.screenshot",
+        "title": "Flutter Web Emulator: Take Screenshot"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "flutterWebEmulator.start",
+          "when": "resourceExtname == .dart",
+          "group": "navigation"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "flutterWebEmulator.reload",
+        "key": "ctrl+r",
+        "mac": "cmd+r",
+        "when": "resourceExtname == .dart"
+      },
+      {
+        "command": "flutterWebEmulator.rotate",
+        "key": "ctrl+shift+r",
+        "mac": "cmd+shift+r",
+        "when": "resourceExtname == .dart"
+      }
+    ],
+    "configuration": {
+      "title": "Flutter Web Emulator",
+      "properties": {
+        "flutterWebEmulator.devicePresets": {
+          "type": "object",
+          "default": {
+            "iPhone 14": {
+              "width": 390,
+              "height": 844,
+              "devicePixelRatio": 3
+            },
+            "iPhone 14 Pro Max": {
+              "width": 430,
+              "height": 932,
+              "devicePixelRatio": 3
+            },
+            "Pixel 7": {
+              "width": 412,
+              "height": 915,
+              "devicePixelRatio": 2.6
+            },
+            "Pixel 7 Pro": {
+              "width": 412,
+              "height": 915,
+              "devicePixelRatio": 3.5
+            },
+            "Samsung Galaxy S23": {
+              "width": 360,
+              "height": 780,
+              "devicePixelRatio": 3
+            },
+            "iPad Air": {
+              "width": 820,
+              "height": 1180,
+              "devicePixelRatio": 2
+            },
+            "iPad Pro 12.9": {
+              "width": 1024,
+              "height": 1366,
+              "devicePixelRatio": 2
+            }
+          },
+          "description": "Device presets for the Emulator"
+        },
+        "flutterWebEmulator.defaultDevice": {
+          "type": "string",
+          "default": "iPhone 14",
+          "description": "Default device preset"
+        },
+        "flutterWebEmulator.autoReload": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable automatic hot reload on Dart file save"
+        },
+        "flutterWebEmulator.customFlags": {
+          "type": "array",
+          "default": [],
+          "description": "Additional flags passed to the Flutter run command"
+        },
+        "flutterWebEmulator.adbPath": {
+          "type": "string",
+          "default": "",
+          "description": "Override path to the ADB executable. Leave empty to use the bundled ADB that ships with this extension \u2014 no manual installation required."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "echo \"No linting configured\"",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.19.9",
+    "@types/vscode": "^1.103.0",
+    "@vscode/test-electron": "^2.5.2",
+    "glob": "^7.2.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.8.3"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "vscode-test": "^1.6.1"
+  },
+  "files": [
+    "out/**",
+    "media/**",
+    "platform-tools/**",
+    "package.json",
+    "readme.md",
+    "LICENSE.md"
+  ]
+}
